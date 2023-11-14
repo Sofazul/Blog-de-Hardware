@@ -1,0 +1,203 @@
+body{
+    background-color: white;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*Cabeçario*/
+#logo{
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+}
+#divlogo{
+    text-align: center;
+    width: 70px;
+}
+
+#titulo{
+    margin-left: 550px;
+    text-align: center;
+    width: 300px;
+}
+
+#cabecario{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 100px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.362);
+    box-shadow: -1px -4px 4px #000;
+
+    position: fixed;
+    top: 0;
+}
+
+#feedback{
+    margin-left: 470px;
+    font-size: 23px;
+}
+
+#feedback-feliz{
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.662);
+    padding-left: 10px;
+    transition: .5s;
+}
+#feedback-feliz.selecionadofb{
+    color: green;
+}
+
+#feedback-neutro{
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.662);
+    padding-left: 10px;
+    transition: .5s;
+}
+#feedback-neutro.selecionadofb{
+    color: orange;
+}
+
+#feedback-triste{
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.662);
+    padding-left: 10px;
+    transition: .5s;
+}
+#feedback-triste.selecionadofb{
+    color:red;
+}
+
+
+
+
+
+/*Menu lateral*/
+.iconMenu{
+    width: 20px;
+    height: 20px;
+}
+
+nav.menu-lateral{
+    width: 73px;
+    height: 800px;
+    background-color: white;
+    padding: 40px 0px 40px 1%;
+    border-left: 2px solid rgba(128, 128, 128, 0.362);
+    box-shadow: 1px 0px 4px #000;
+
+    position: fixed;
+    top: 52px;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 5px;
+}
+.btn-expandir > i{
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+
+ul li.item-menu a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .7s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 20px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 3px;
+}
+
+ul li.item-menu:hover{
+    background: grey;
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.ativo{
+    background-color: gray;
+}
+
+
+
+
+/*Conteudo*/
+#corpo-site{
+    background-color: white;
+    width: 1464px;
+    height: 658px;
+    margin-left: 73px;
+    margin-top: 50px;
+
+    
+    transition: .5s;
+}
+
+div#corpo-site.diminuir{
+    margin-left: 300px;
+    width: 1237px;
+}
+
+#div-fundo{
+    width: 1463px;
+    height: 1600px;
+    background-color: rgba(128, 128, 128, 0.352);
+    transition: .5s;
+}
+#div-fundo.diminuir{
+    width: 1235px;
+}
+
+.itens-componentes{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 500px;
+    margin-left: 40px;
+    border-radius: 30px;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+.itens-componentes.diminuir{
+    width: 370px;
+    margin-left: 20px;
+}
